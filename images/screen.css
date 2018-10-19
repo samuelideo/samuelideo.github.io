@@ -13,10 +13,10 @@
 
 /* 2.1 Typography Section */
 h1,h2,h3,h4,h5,h6{
-    font-family: sansita, sans-serif;
+    font-family: Arial, sansita, sans-serif;
 }
 h1{ font-size: 2em;
-background-color: blue;}
+}
 
 #menu ul {
     padding:0px;
