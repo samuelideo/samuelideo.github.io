@@ -15,9 +15,16 @@
 h1,h2,h3,h4,h5,h6{
     font-family: sansita, sans-serif;
 }
-h1{ font-size: 5em;
+h1{ font-size: 2em;
 background-color: blue;}
 
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+#menu ul li { display: inline; }
 body{
     font-family: helvetica, sans-serif;
     font-size: 18px;
