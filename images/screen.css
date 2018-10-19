@@ -1,0 +1,28 @@
+/* This is for screen devices */
+
+/*
+1. Imports are first
+2. General Style Rules 
+3. Mobile First Devices
+4. Larger Screen Sizes (Media Query Required)*/
+
+/* 1. Import Statements */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+/* 2. General Style Rules  */
+
+/* 2.1 Typography Section */
+h1,h2,h3,h4,h5,h6{
+    font-family: sansita, sans-serif;
+    color: red;
+}
+
+body{
+    font-family: helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* 3. Mobile Rules */
+.site-brand{
+    font-size: 5vw;
+}
