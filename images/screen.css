@@ -14,8 +14,9 @@
 /* 2.1 Typography Section */
 h1,h2,h3,h4,h5,h6{
     font-family: sansita, sans-serif;
-    color: red;
 }
+h1{ font-size: 5em;
+background-color: blue;}
 
 body{
     font-family: helvetica, sans-serif;
