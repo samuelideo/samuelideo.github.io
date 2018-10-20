@@ -10,21 +10,34 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
 /* 2. General Style Rules  */
+html {
+    box-sizing: border-box;
+   }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+   }
 
 /* 2.1 Typography Section */
-h1,h2,h3,h4,h5,h6{
-    font-family: Arial, sansita, sans-serif;
+h3,h4,h5,h6{
+    font-family: Sansita, Helvetica, verdana, sans-serif;
+    font-size: 18px;
 }
-h1{ font-size: 2em;
+h1{ font-family: Sansita;
+    font-size: 18px;
+    background-color: #0e89d5;
+
+}
+h2 {font-family: Sansita;
+    font-size: 30px;
 }
 
-#menu ul {
+ul#menu {
     padding:0px;
     margin:0px;
-    background-color:#EDEDED;
     list-style:none;
 }
-#menu ul li { display: inline; }
+ul#menu li { display: inline; }
 body{
     font-family: helvetica, sans-serif;
     font-size: 18px;
@@ -39,7 +52,29 @@ body{
     text-decoration: none;
     border-bottom:3px solid #EDEDED;
 }
-
+.temps1 {    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 220px;
+    height: 220px;
+    
+}
+.temps2 {    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 220px;
+    height: 220px;
+    
+}
+.temps3 {    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 220px;
+    height: 220px;
+}
 /* 3. Mobile Rules */
 .site-brand{
     font-size: 5vw;
