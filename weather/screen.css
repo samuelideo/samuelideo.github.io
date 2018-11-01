@@ -1,84 +1,161 @@
-/* This is for screen devices */
+/* This style sheet is for screen devices */
 
-/*
-1. Imports are first
-2. General Style Rules 
+/* 
+1. Imports
+2. General Style Rules
 3. Mobile First Devices
-4. Larger Screen Sizes (Media Query Required)*/
+4. Larger Screen Size (Media Query Required) */
 
-/* 1. Import Statements */
+/* 1. Imports */
 @import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('/weather/css/normalize.css');
 
-/* 2. General Style Rules  */
+/* 2. General Style Rules */
 html {
     box-sizing: border-box;
+    margin-left: 5px;
    }
-   
-   *, *:before, *:after{
+*, *:before, *:after{
     box-sizing: inherit;
-   }
-
-/* 2.1 Typography Section */
-h3,h4,h5,h6{
-    font-family: Sansita, Helvetica, verdana, sans-serif;
-    font-size: 18px;
 }
-h1{ font-family: Sansita;
-    font-size: 18px;
+#background{
+    background-image: url("/weather/images/background-pic.jpg");
     background-color: #0e89d5;
-
-}
-h2 {font-family: Sansita;
-    font-size: 30px;
+    background-position: center;
 }
 
-ul#menu {
-    padding:0px;
-    margin:0px;
-    list-style:none;
+.tile{
+    background-color: rgba(200,200,200,.6);
+    width: 50%;
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+    text-align: center;
 }
-ul#menu li { display: inline; }
+nav ul{ 
+    display: flex; 
+    justify-content: space-around;
+    list-style: none;
+    
+  }
+footer{
+    margin-bottom: 2em;
+}
+#city{
+    margin-top: 10px;
+}
+.current{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* 2.1 Typography Section */
+h1, h2, h3, h4, h5, h6 {
+    font-family: sansita, sans-serif;
+    color:#0e89d5;
+}
 body{
     font-family: helvetica, sans-serif;
     font-size: 18px;
 }
-#menu ul li a {
-    padding: 2px 10px;
-    display: inline-block;
+#site-brand {
+    font-family: sansita, sans-serif;
+    font-size: 50pt;
+    font-weight: 600;
+    color:#0e89d5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-    /* visual do link */
-    background-color:#EDEDED;
-    color: #333;
-    text-decoration: none;
-    border-bottom:3px solid #EDEDED;
+.info{
+    font-weight: bold;
 }
-.temps1 {    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 15px;
-    width: 220px;
-    height: 220px;
-    
+#current_temp{
+    font-size: 50pt;
 }
-.temps2 {    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 15px;
-    width: 220px;
-    height: 220px;
-    
+#high_temp{
+    color: red;
 }
-.temps3 {    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 15px;
-    width: 220px;
-    height: 220px;
+#low_temp{
+    color: blue;
+}
+/* 2.2 Lists Section */
+dl{
+    /* display: flex; */
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+dt{
+    margin:0;
+    font-size: 4vw;
+}
+dd{
+   margin-left: 0;
+   margin-right: 10px;
+   font-size: 4vw;
+   /* flex-wrap: nowrap; */
+}
+ul { 
+    list-style: none; 
+    padding-left: 0;
+}
+#high_temp, #low_temp{
+    display: inline-block;
+    list-style: none;
+}
+/* 2.3 Image Section */
+img{
+    width: 50%; 
+    height: 50%;
 }
 /* 3. Mobile Rules */
-.site-brand{
-    font-size: 5vw;
+#site-brand{
+    font-size: 7vw;
+}
+#cur_wind, #cur_temp{
+    visibility: hidden;
+    margin: 0;
+    line-height: 0;
+}
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: white;
+  }
+  nav ul li{
+    display: inline;
+    /* align-items: space-around; */
+    /* border: 2px dashed black; */
+    margin: 2pt;
 }
 
-/*4. Larger Screen Rules*/
-@media screen and (max-width: 720px)
+    
+
+
+/* 4. Larger Screen */
+@media screen and (min-width: 720px) {
+    nav {
+        position: initial;
+        /* bottom: 0;
+        left: 0; */
+        background: white;
+    }
+    nav ul li{
+        /* border: 2pt; */
+    }
+    ul{
+        margin-right: 2pt;
+        justify-content: flex-start;
+    }
+    #cur_wind, #cur_temp{
+        visibility: visible;
+        margin: 10px;
+        line-height: 1.15;
+    }
+    #background{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
