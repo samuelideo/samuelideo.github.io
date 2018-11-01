@@ -79,3 +79,6 @@ body{
 .site-brand{
     font-size: 5vw;
 }
+
+/*4. Larger Screen Rules*/
+@media screen and (max-width: 720px)
