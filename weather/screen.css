@@ -142,7 +142,7 @@ nav {
         background: white;
     }
     nav ul li{
-        /* border: 2pt; */
+        border: 2pt;
     }
     ul{
         margin-right: 2pt;
