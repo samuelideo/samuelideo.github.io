@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\wwr"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "samuelideo.github.io"
+	}
+}
