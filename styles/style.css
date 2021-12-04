@@ -45,7 +45,7 @@ nav a {
     text-decoration: none;
     font-family: 'Lato';
     padding: 72px;
-    font-size: large;
+    font-size: 1.5em;
 }
 
 nav a:hover {
@@ -141,12 +141,12 @@ nav {
 }
 
 h4 {
-    margin-top: 150px;
-    font-size: larger;
+    margin-top: 250px;
+    font-size: x-large;
 }
 
 #hero-msg h4 {
-    color: white
+    color: white;
 }
 
 .msg h2 p {
@@ -159,7 +159,7 @@ h4 {
     background-color: #023047;
     color: white;
     font-family: "Lato";
-    font-size: .8em;
+    font-size: 1.1em;
     line-height: 1.5em;
     padding: 35px;
     margin-top: 300px;
@@ -195,7 +195,7 @@ footer {
 
 footer h3 {
     color: #023047;
-    font-family: 'Ubuntu';
+    font-family: 'Lato';
 }
 
 footer a {
@@ -280,6 +280,7 @@ button {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  font-size: larger;
 }
 
 button:hover {
@@ -364,3 +365,184 @@ hr {
 
 /*Games for Adults*/
 
+.active {
+    color: #d9c2a3;
+    background-color: black; 
+}
+.adultgames-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.adult-title {
+    font-family: 'Fjalla One';
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: #f18f01;
+    margin: 100px 0;
+    border-top: 5px double;
+    border-bottom: 5px double;
+    grid-column: 2/8;
+    grid-row: 1/2;
+    justify-self: stretch;
+    text-align: center;
+    background-color: #2E4057;
+}
+.game1-img {
+  
+    border: 5px solid #99c24d;
+    grid-column: 2/5;
+    grid-row: 2/5;
+    width: 80%;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.game1-img:hover{
+    transform: scale(1.1);
+}
+
+.game1-text {
+    grid-column: 6/9;
+    grid-row: 3/4;
+    background-color: #f18f01;
+    
+}
+.game2-img {
+    border: 5px solid #99c24d;
+    grid-column: 6/9;
+    grid-row: 6/9;
+    width: 80%;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.game2-img:hover{
+    transform: scale(1.1);
+}
+
+.game2-text {
+    grid-column: 2/5;
+    grid-row: 7/8;
+    background-color: #048BA8;
+}
+
+.game3-img {
+    border: 5px solid #99c24d;
+    grid-column: 2/5;
+    grid-row: 11/13;
+    width: 80%;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.game3-img:hover{
+    transform: scale(1.1);
+}
+
+.game3-text {
+    grid-column: 6/9;
+    grid-row: 12/13;
+    background-color: #2E4057;
+}
+.game1-text, .game2-text, .game3-text {
+    color: white;
+    font-size: larger;
+    overflow: hidden; /* ADDED */
+    height: auto; /* ADDED */
+    height: 320px;
+    padding: 20px;
+    line-height: 1.5em;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+/*Games for Kids*/
+
+.active {
+    color: #d9c2a3;
+    background-color: black; 
+}
+.kidsgames-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.kids-title {
+    font-family: 'Fjalla One';
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: #f18f01;
+    margin: 100px 0;
+    border-top: 5px double;
+    border-bottom: 5px double;
+    grid-column: 2/8;
+    grid-row: 1/2;
+    justify-self: stretch;
+    text-align: center;
+    background-color: #2E4057;
+}
+.gamekids1-img {
+    border: 5px solid #99c24d;
+    grid-column: 2/5;
+    grid-row: 2/5;
+    width: 80%;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.gamekids1-img:hover{
+    transform: scale(1.1);
+}
+
+.gamekids1-text {
+    grid-column: 6/9;
+    grid-row: 3/4;
+    background-color: #f18f01;
+    
+}
+.kidsgame2-img {
+    border: 5px solid #99c24d;
+    grid-column: 6/9;
+    grid-row: 6/9;
+    width: 70%;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.kidsgame2-img:hover {
+    transform: scale(1.1);
+}
+
+.kidsgame2-text {
+    grid-column: 2/5;
+    grid-row: 7/8;
+    background-color: #048BA8;
+}
+
+.kidsgame3-img {
+    border: 5px solid #99c24d;
+    grid-column: 2/5;
+    grid-row: 11/13;
+    width: 80%;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.kidsgame3-img:hover {
+    transform: scale(1.1);
+}
+
+.kidsgame3-text {
+    grid-column: 6/9;
+    grid-row: 12/13;
+    background-color: #2E4057;
+}
+.gamekids1-text, .kidsgame2-text, .kidsgame3-text {
+    color: white;
+    font-size: larger;
+    overflow: hidden; /* ADDED */
+    height: auto; /* ADDED */
+    height: 320px;
+    padding: 20px;
+    line-height: 1.5em;
+    box-shadow: 5px 5px 10px #6f7364;
+}
